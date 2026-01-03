@@ -1,0 +1,102 @@
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  padding:15px;
+  background:linear-gradient(135deg,#ffe6f0,#fff);
+  font-family:'Poppins',sans-serif;
+  text-align:center;
+}
+
+.container{
+  background:white;
+  padding:25px;
+  border-radius:22px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+  animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.title{
+  font-family:'Pacifico',cursive;
+  color:#ff4081;
+  font-size:28px;
+}
+
+.name{
+  font-family:'Great Vibes',cursive;
+  font-size:55px;
+  color:#e91e63;
+  animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+  50%{transform:scale(1.08);}
+}
+
+.dob{
+  font-family:'Dancing Script',cursive;
+  font-size:18px;
+}
+
+.wish{
+  margin:8px 0;
+}
+.line1{font-family:'Pacifico',cursive;}
+.line2{font-family:'Dancing Script',cursive;}
+.line3{font-family:'Great Vibes',cursive;}
+.line4{font-family:'Poppins',sans-serif;}
+.line5{font-family:'Pacifico',cursive;}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:15px;
+  padding:5px;
+  background:linear-gradient(45deg,#ffd700,#ff69b4);
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.insta{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);
+}
+
+.float-icons{
+  position:fixed;
+  bottom:-80px;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  pointer-events:none;
+}
+
+.float-icons span{
+  font-size:34px;
+  animation:floatUp 7s infinite;
+}
+
+@keyframes floatUp{
+  to{transform:translateY(-120vh);opacity:0;}
+}
+
+#confetti{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+}
